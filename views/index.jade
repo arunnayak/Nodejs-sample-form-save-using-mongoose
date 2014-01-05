@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  #p Welcome to #{title}
+      #div
+          ul
+          each user in users
+              li #{user.name}: #{user.age}: #{user._id}
+
+
